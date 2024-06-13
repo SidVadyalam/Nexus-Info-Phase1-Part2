@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
+	<title>Dashboard for Resturant</title>
+</head>
+<body>
+
+	{% if user.is_authenticated %}
+
+	<div class='intro'>
+		<h1>Welcome! Please order from our menu</h1>
+	</div>
+
+
+	<div class="image">
+		<img src="https://imenupro.com/img/menus96/organic-menu.jpg">
+	</div>
+
+	<div class="button">
+		<div class="home"><a href="/">Home</a></div>
+	</div>
+
+	{% else %}
+		<div class='intro'>
+			<h1>Your are not logged in. Please log in to view the menu</h1>
+		</div>
+
+		<div class="button">
+			<div class="home"><a href="/">Home</a></div>
+		</div>
+	{% endif %}
+
+
+</body>
+</html>

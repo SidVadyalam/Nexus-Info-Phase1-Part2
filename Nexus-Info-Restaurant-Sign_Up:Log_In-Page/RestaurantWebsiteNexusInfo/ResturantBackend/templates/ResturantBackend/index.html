@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+	<title>Restaurant Front Page</title>
+</head>
+<body>
+	<div class="Logo">
+		<img src="{% static 'css/Restaurant-Logo.png' %}">
+	</div>
+
+	<div class="Message">
+		{% for message in messages %}
+		{% if forloop.first %}
+		<p role="alert">
+			{{ message }}
+		</p>
+		{% endif %}
+		{% endfor %}
+	</div>
+	<div class="Buttons">
+		<div class="Log_In"><a href="/my_login">Log In</a></div>
+		<div class="Sign_Up"><a href="/register">Sign Up</a></div>
+	</div>
+</body>
+</html>

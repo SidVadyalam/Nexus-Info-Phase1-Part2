@@ -1,0 +1,385 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	width: 100vw;
+	min-height: 100vh;
+
+}
+
+.Background{
+	/* border: 1px black solid; */
+	display: inline;
+	width: 60vw;
+	min-height: 100vh;
+	position: absolute;
+	left: 40%;
+	background: url("Restaurant-Sign-Up-Background.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+
+	
+}
+
+.Sign-Up-Box{
+	/* border: 1px black solid; */
+	width: 40vw;
+	min-height: 100vh;
+	background: #151515;
+	color: #F0F0F0;
+
+}
+
+
+.Logo{
+	display: flex;
+	justify-content: center;
+}
+
+.Logo-Img{
+	max-width: 20%;
+	max-width: 20%;
+}
+
+
+.First-Block, .Second-Block, .Third-Block, .Fourth-Block{
+	/* border: 1px white solid; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4%;
+	padding-right: 10%;
+}
+
+
+.Checkbox{
+	/* border: 1px white solid; */
+	width: 42%;
+	display: flex;
+	align-items: center;
+
+}
+
+
+
+.Checkbox input{
+	position: absolute;
+	opacity: 0;
+	margin-right: 10px;
+
+}
+
+
+.Checkbox-Label{
+	display: flex;
+}
+
+.Checkbox-Label:before{
+	content: "\2715";
+	color: transparent;
+	width: 1em;
+	height: 1em;
+	border: 1px #969696 solid;
+	align-self: center;
+	margin: 4px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.Checkbox input:hover + .Checkbox-Label:before{
+	content: "\2715";
+	color: transparent;
+	background: rgb(99, 205, 68, 1.0);
+
+}
+
+.Checkbox input:checked + .Checkbox-Label:before{
+	content: "\2715";
+	color: white;
+	background: rgb(99, 205, 68, 1.0);
+
+}
+
+
+
+.Checkbox-Label p{
+	font-family: Arial;
+	font-size: 16px;
+}
+
+
+.Checkbox-Label a{
+	font-family: Arial;
+	color: rgb(99, 205, 68, 1.0);
+}
+
+
+
+.First-Name label, .Last-Name label, .Email label, .Phone label, .Username label, .New-Password label, .Confirm-Password label{
+	display: block;
+	font-family: 'Playfair Display';
+	font-size: 20px;
+}
+
+
+.First-Name input, .Last-Name input, .Email input, .Phone input, .Username input, .New-Password input, .Confirm-Password input{
+	height: 25px;
+	width: 100%;
+	font-size: 18px;
+	outline: none;
+	background: black;
+	border: 2px #969696 solid;
+	border-radius: 2px;
+	color: #F0F0F0;
+	display: block;
+
+}
+
+
+.First-Name input:hover, .Last-Name input:hover, .Email input:hover, .Phone input:hover, .Username input:hover, .New-Password input:hover, .Confirm-Password input:hover{
+	box-sizing: content-box;
+	border: 2px #969696 solid;
+	border-radius: 2px;
+}
+
+
+.Submit-BTN{
+	/* border: 1px solid white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Submit-BTN input{
+	height: 40px;
+	width: 30%;
+	background: rgb(99, 205, 68, 1.0);
+	font-family: Arial;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 2px #969696 solid;
+
+}
+
+
+.Account{
+	text-align: center;
+	font-family: Arial;
+}
+
+
+.LogIn{
+	/* border: 1px solid white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.LogIn-BTN{
+	height: 40px;
+	width: 180px;
+	background: rgb(99, 205, 68, 1.0);
+	font-family: Arial;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 2px #969696 solid;
+
+}
+
+
+.Wrong-Answer-Username-Div::after{
+	content: " *Please only use letters, numbers and period in username";
+	color: red;
+	display: block;
+	width: 200px;
+}
+
+
+.Wrong-Answer-Password-Div::after{
+	content: " *Please enter atleast 8 characters";
+	color: red;
+}
+
+
+.Wrong-Answer-Confirm-Password-Div::after{
+	content: " *Passwords must match";
+	color: red;
+}
+
+
+.Wrong-Answer-Phone-Div::after{
+	content: " *Phone number must be proper format";
+	color: red;
+	display: block;
+	width: 200px;
+}
+
+.Wrong-Answer-Email-Div::after{
+	content: " *Enter a proper email";
+	color: red;
+}
+
+
+.Wrong-Answer-Name-Div::after{
+	content: " *Enter a proper name";
+	color: red;
+}
+
+
+.Wrong-Answer::after{
+	content: " *";
+	color:red;
+}
+
+@media all and (max-width:1170px){
+
+
+	.Background{
+		/* border: 1px black solid; */
+		display: inline;
+		width: 50vw;
+		min-height: 100vh;
+		position: absolute;
+		left: 50%;
+		background: url("Restaurant-Sign-Up-Background.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+
+		
+	}
+
+	.Sign-Up-Box{
+		/* border: 1px black solid; */
+		width: 50vw;
+		min-height: 100vh;
+		background: #151515;
+		color: #F0F0F0;
+
+	}
+}
+
+
+@media all and (max-width: 940px){
+
+
+	.Background{
+		/* border: 1px black solid; */
+		display: inline;
+		width: 40vw;
+		min-height: 100vh;
+		position: absolute;
+		left: 60%;
+		background: url("Restaurant-Sign-Up-Background.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+
+		
+	}
+
+	.Sign-Up-Box{
+		/* border: 1px black solid; */
+		width: 60vw;
+		min-height: 100vh;
+		background: #151515;
+		color: #F0F0F0;
+
+	}
+}
+
+@media all and (max-width: 780px){
+
+
+	.Background{
+		/* border: 1px black solid; */
+		display: inline;
+		width: 30vw;
+		min-height: 100vh;
+		position: absolute;
+		left: 70%;
+		background: url("Restaurant-Sign-Up-Background.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+
+		
+	}
+
+	.Sign-Up-Box{
+		/* border: 1px black solid; */
+		width: 70vw;
+		min-height: 100vh;
+		background: #151515;
+		color: #F0F0F0;
+
+	}
+}
+
+
+@media all and (max-width: 670px){
+
+
+	.Background{
+		/* border: 1px black solid; */
+		display: inline;
+		width: 20vw;
+		min-height: 100vh;
+		position: absolute;
+		left: 80%;
+		background: url("Restaurant-Sign-Up-Background.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+
+		
+	}
+
+	.Sign-Up-Box{
+		/* border: 1px black solid; */
+		width: 80vw;
+		min-height: 100vh;
+		background: #151515;
+		color: #F0F0F0;
+
+	}
+}
+
+
+
+@media all and (max-width: 580px){
+
+
+	.Background{
+		/* border: 1px black solid; */
+		display: inline;
+		width: 0vw;
+		min-height: 100vh;
+		position: absolute;
+		left: 100%;
+		background: url("Restaurant-Sign-Up-Background.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+
+		
+	}
+
+	.Sign-Up-Box{
+		/* border: 1px black solid; */
+		width: 100vw;
+		min-height: 100vh;
+		background: #151515;
+		color: #F0F0F0;
+
+	}
+}
